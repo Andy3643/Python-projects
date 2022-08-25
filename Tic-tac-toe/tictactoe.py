@@ -31,8 +31,21 @@ def play_game():
         print ("Tie")
 #function to handle player turns
 def handle_turn(player):
+    print (player + "'s turn.")
     position = input('Choose position between 1-9 :')
-    position = int(position) - 1 # generate actual index
+    allowed_inputs = ["1","2","3","4","5","6","7","8","9"]
+
+    valid = False
+    while not valid:
+        while position not in allowed_inputs:
+            position = input('Invalid input! Choose position between 1-9 :')
+
+        position = int(position) - 1 # generate actual index
+
+        if board[position] == "-":
+            valid = True
+        else:
+            print ("Position filled")
 
     board[position] = player
     display_board()

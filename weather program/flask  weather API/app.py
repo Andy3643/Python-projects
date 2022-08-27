@@ -1,13 +1,10 @@
-
-from tkinter import NO
 from flask import Flask, render_template,request
-from flask_sqlalchemy import SQLAlchemy
 import requests 
 
 
 app = Flask (__name__)
-app.config['SQLALCHEMY_DATABASE_URI']='postgresql://andydb:pass123@localhost/weather'
-db= SQLAlchemy(app)
+# app.config['SQLALCHEMY_DATABASE_URI']='postgresql://andydb:pass123@localhost/weather'
+# db= SQLAlchemy(app)
 
 
 @app.route('/',methods =['GET','POST'])

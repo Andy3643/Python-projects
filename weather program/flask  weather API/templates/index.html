@@ -30,34 +30,61 @@
     <span class="navbar-brand mb-0 h1">WEATHER TODAY</span>
   </div>
 </nav> 
-<section class="section">
-  <div class="container">
+<section>
+  <div class="container  py-5">
     <div class="row">
-      <div class="columns">
-          <div class="text-center">
-              <form method="POST">
-                <div class="input-group">
-                  <div class="form-outline">
-                    <input type="search" id="form1" class="form-control" />
-                    <label class="form-label" for="form1">Search</label>
-                  </div>
-                  <button type="button" class="btn btn-primary">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
-              </form>
-          </div>
+      <div class="col-3 "></div>
+      <div class="col-6">
+        <h2 class="text-center">Search City Here</h2>
+        <div class="form mx-auto mt-3" style="padding-left: 18%;">
+          <form method="POST">
+            <div class="input-group">
+              <div class="form-outline">
+                <input name="baluku" type="search" id="form1" class="form-control" />
+                <label class="form-label" for="form1">Enter City</label>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-  </div>
+      <div class="col-3"></div>
+    </div>
   </div>
 </section>
+<section>
+        <div class="container mt-5">
+          <div class="row">
 
-
-
-
-
-
-
+        
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="http://openweathermap.org/img/w/{{ condition.icon }}.png" alt="Image"
+                width="100%">
+                
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="card-title">{{condition.cityname}}</h3>
+                  <p class="card-text">
+                  {{condition.temperature}} °C</p>
+                  <p class="card-text">
+                    {{condition.description}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      </div>
+</section>
 
 
   <!-- MDB -->

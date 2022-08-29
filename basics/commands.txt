@@ -1,0 +1,4 @@
+    * virtual env without pip
+python3.10 -m venv --without-pip virtual
+source virtual/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py | python

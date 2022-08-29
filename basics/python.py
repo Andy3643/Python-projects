@@ -112,12 +112,12 @@ class Person:
        self.name = "Joshua"
        self.age = 24
     #class methods
-@classmethod
-def save_person (cls):
-    pass
+# @classmethod
+# def save_person (cls):
+#     pass
 
-class Woman(Person):
-    def __init__(self,height):
-        Person.__init__(self,name,age)
-        self.height = 167
-class Man:
+# class Woman(Person):
+#     def __init__(self,height):
+#         Person.__init__(self,name,age)
+#         self.height = 167
+# class Man:

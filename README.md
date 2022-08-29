@@ -2,7 +2,7 @@
 This repository contains the common python  projects developers work on.
 
 ##  Getting started
- to get a copy of the repository, Fork this repository or clone it to your local machine using the following command.
+To get a copy of the repository, Fork this repository or clone it to your local machine using the following command.
 ```
 git clone https://github.com/Andy3643/Python-projects.git
 ```
